@@ -1,0 +1,6 @@
+.case {
+    background-color: black;
+    display: inline-flex;
+    flex-flow: wrap row;
+
+}

@@ -1,6 +1,64 @@
+@media(min-width : 768px) {
+    #accueil {
+        font-size: large;
+    }
+}
+
+html {
+    background-color: #0643efa6;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .case {
     background-color: black;
     width: 24%;
-    
+}
 
+.text-box {
+    box-shadow: 5px 5px 5px 1px slategray;
+}
+
+
+/*
+*
+Signup
+*
+*/
+.conditions-non-remplies {
+    color: red;
+}
+
+#canvas {
+}
+
+#mdp-faible {
+    display: none;
+    border-bottom: 5px red solid;
+}
+
+#mdp-moyen {
+    display: none;
+    border-bottom: 5px #efef00 solid;
+    
+}
+
+#mdp-fort {
+    display: none;
+    border-bottom: 5px green solid;
+
+}
+
+/*
+*
+Profil
+*
+*/
+
+.img-profile {
+    width: 25%;
 }

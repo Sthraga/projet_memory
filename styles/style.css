@@ -62,3 +62,15 @@ Profil
 .img-profile {
     width: 25%;
 }
+
+#profile-form {
+    max-width: 75%;
+}
+
+#illustration-memory {
+    max-width: 75%;
+}
+
+.hide {
+    display: none;
+}

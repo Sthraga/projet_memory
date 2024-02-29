@@ -29,7 +29,7 @@
         <h1 class="mt-2">Profil</h1>
         <div class="text-box border border-1 rounded p-3 mb-4 mt-2 bg-light d-flex flex-column align-items-center">
             <img class="img-fluid img-thumbnail img-profile" src="./ressources/question.svg" alt="image profil">
-            <form action="" id="profile-form">
+            <form class="d-flex flex-column align-items-center flex-wrap" action="" id="profile-form">
                 <label class="form-label mt-1" for="email">Email</label>
                 <input class="form-control" type="email" name="email" id="email" readonly>
                 <label class="form-label mt-1" for="username">Nom d'utilisateur</label>
@@ -37,20 +37,27 @@
 
                 <label class="form-label mt-1" for="memory-img">Choix du Memory</label>
                 <select class="form-control" name="memory-img" id="memory-img">
-                  <option value="">Choisissez un Memory</option>
-                  <option value="dog">Dog</option>
-                  <option value="cat">Cat</option>
-                  <option value="hamster">Hamster</option>
-                  <option value="parrot">Parrot</option>
-                  <option value="spider">Spider</option>
-                  <option value="goldfish">Goldfish</option>
+                  <option value="alphabet-scrabble">Alphabet</option>
+                  <option value="animaux">Animaux</option>
+                  <option value="animaux-animes">Animaux animés</option>
+                  <option value="animaux-domestiques">Animaux domestiques</option>
+                  <option value="chiens">Chiens</option>
+                  <option value="dinosaures">Dinosaures</option>
+                  <option value="dinosaures-avec-nom">Dinosaures nommés</option>
+                  <option selected value="legume">Légumes</option>
                 </select>
+
+                <img id="illustration-memory" class="mt-2 mb-3" src="./ressources/legume/memory_detail_legume.png" alt="image-correspondant">
+
+
 
                 <label class="form-label mt-1" for="memory-size">Taille du Memory</label>
                 <select class="form-control" name="memory-size" id="memory-size">
-                    <option select value="dog">4x3</option>
-                    <option value="cat">4x4</option>
-                    <option value="hamster">5x5</option>
+                    <option id="4x3" selected value="4x3">4x3</option>
+                    <option class="hide" id="4x4" value="4x4">4x4</option>
+                    <option class="hide" id="5x4" value="5x4">5x4</option>
+                    <option class="hide" id="7x8" value="7x8">7x8</option>
+                    <option class="hide" id="13x4" value="13x4">13x4</option>
                 </select>
                 
                 <button type="submit" class="btn btn-primary mt-3">Enregistrez option</button>

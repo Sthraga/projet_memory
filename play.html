@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam&display=swap" rel="stylesheet"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script async src="./script/jeu.js"></script>
+    <script async src="./script/play.js"></script>
 </head>
 <body class="container-md text-center fs-lg-2 border border-1 border-dark border-opacity-50 rounded mt-3" id="accueil">
 
@@ -27,18 +27,18 @@
     <main>
 
         <h1 class="mt-2">Memory Game</h1>
-        <section class="mt-1">
+        <section class="mt-1 mb-5">
             <div class="text-box border border-1 rounded p-3 mb-2 mt-2 bg-light">
                 <p>Tentez de gagner avec le moins d'essai possible.</p>
                 <p>Appuyez sur la <strong>barre d'espace</strong> pour relancer le jeu.</p>
-                <p>Nombre de coups : </p>
+                <p>Nombre de coups : <span id="nombre-coups"></span></p>
 
             </div>
-            <!-- <div class="text-box border border-2 rounded mb-2 mt-1 bg-light"> -->
-            <div id="game" class="container d-inline-flex flex-column mt-3 mb-3">
-            <!-- </div> -->
+            
+            <div id="game" class="container d-inline-flex flex-column mt-3 mb-3"></div>
 
-            </div>
+            <div id="tableau-scores" class="container d-inline-flex flex-column mb-3"></div>
+
         </section>
     </main>
 </body>

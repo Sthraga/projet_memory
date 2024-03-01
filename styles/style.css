@@ -74,3 +74,31 @@ Profil
 .hide {
     display: none;
 }
+
+/*
+*
+Jouer
+*
+*/
+
+@media(min-width : 992px) {
+    #game {
+        max-width: 75%;
+    }
+}
+
+.cartePlateau:hover {
+    background-color: lightgray;
+} 
+
+.carte-alphabet {
+    background-color: lightgray;
+}
+
+.flip-card {
+    transition: transform 1s;
+    transform: rotateY(360deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+}
